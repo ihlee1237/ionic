@@ -1,0 +1,88 @@
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import {
+  AlertController,
+  AnimationController,
+  IonAccordion,
+  IonAccordionGroup,
+  IonBackButton,
+  IonBadge,
+  IonButton,
+  IonButtons,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonContent,
+  IonFab,
+  IonFabButton,
+  IonFabList,
+  IonFooter,
+  IonHeader,
+  IonIcon,
+  IonInput,
+  IonItem,
+  IonLabel,
+  IonList,
+  IonMenuButton,
+  IonModal,
+  IonProgressBar,
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
+  IonTitle,
+  IonToggle,
+  IonToolbar,
+  ModalController,
+  NavController,
+  ToastController
+} from '@ionic/angular/standalone';
+
+const components = [
+  IonAccordion,
+  IonAccordionGroup,
+  IonBackButton,
+  IonBadge,
+  IonButton,
+  IonButtons,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonContent,
+  IonFab,
+  IonFabButton,
+  IonFabList,
+  IonFooter,
+  IonHeader,
+  IonIcon,
+  IonInput,
+  IonItem,
+  IonLabel,
+  IonList,
+  IonMenuButton,
+  IonModal,
+  IonProgressBar,
+  IonTitle,
+  IonToggle,
+  IonToolbar,
+  IonTabBar,
+  IonTabButton,
+  IonTabs
+];
+
+@NgModule({
+  declarations: [],
+  imports: [CommonModule, ...components],
+  providers: [
+    AlertController,
+    AnimationController,
+    ModalController,
+    NavController,
+    ToastController
+  ],
+  exports: [...components]
+})
+export class IonicModule {}

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { addIcons } from 'ionicons';
+import { ellipse, square, triangle } from 'ionicons/icons';
 
 @Component({
   selector: 'app-tabs',
@@ -6,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
-
-  constructor() {}
-
+  constructor() {
+    addIcons({ triangle, ellipse, square });
+  }
 }
