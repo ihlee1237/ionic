@@ -92,34 +92,12 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-devkit/build-angular:jest",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
-              },
-              {
-                "glob": "**/*.svg",
-                "input": "node_modules/ionicons/dist/ionicons/svg",
-                "output": "./svg"
-              }
-            ],
-            "styles": ["src/global.scss", "src/theme/variables.scss"],
-            "scripts": []
+            "polyfills": ["src/polyfills.ts"],
+            "tsConfig": "tsconfig.spec.json"
           },
-          "configurations": {
-            "ci": {
-              "progress": false,
-              "watch": false
-            }
-          }
+          "configurations": {}
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
